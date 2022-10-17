@@ -39,3 +39,18 @@ img {
 	text-align: center;
 	font-family: copperplate;
 	font-weight: 700;
+	
+	body {
+		background-color: rgb(238, 211, 238);
+	  }
+	  
+	  h1 {
+		color: rgb(20, 1, 1);
+		text-align: center;
+	  }
+	  
+	  p {
+		font-family: verdana;
+		font-size: 20px;
+	  }
+	  
