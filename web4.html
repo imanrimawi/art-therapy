@@ -24,7 +24,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>History</title>
+<title>Conclusion</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -107,102 +107,20 @@ body {
 </div>
 </body>
 </html>
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
-canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 </style>
 </head>
-<body onload="startGame()">
-<script>
+<body>
 
-var myGamePiece;
-
-function startGame() {
-    myGamePiece = new component(30, 30, "smiley.gif", 10, 120, "image");
-    myGameArea.start();
-}
-
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-        this.frameNo = 0;
-        this.interval = setInterval(updateGameArea, 20);
-        },
-    clear : function() {
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    },
-    stop : function() {
-        clearInterval(this.interval);
-    }
-}
-
-function component(width, height, color, x, y, type) {
-    this.type = type;
-    if (type == "image") {
-        this.image = new Image();
-        this.image.src = color;
-    }
-    this.width = width;
-    this.height = height;
-    this.speedX = 0;
-    this.speedY = 0;    
-    this.x = x;
-    this.y = y;    
-    this.update = function() {
-        ctx = myGameArea.context;
-        if (type == "image") {
-            ctx.drawImage(this.image, 
-                this.x, 
-                this.y,
-                this.width, this.height);
-        } else {
-            ctx.fillStyle = color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
-        }
-    }
-    this.newPos = function() {
-        this.x += this.speedX;
-        this.y += this.speedY;        
-    }
-}
-
-function updateGameArea() {
-    myGameArea.clear();
-    myGamePiece.newPos();
-    myGamePiece.update();
-}
-
-function move(dir) {
-    myGamePiece.image.src = "https://www.pngfind.com/pngs/m/667-6676153_splash-colorsplash-red-freetoedit-ftestickers-pessoa-bem-resolvida.png";
-    if (dir == "up") {myGamePiece.speedY = -1; }
-    if (dir == "down") {myGamePiece.speedY = 1; }
-    if (dir == "left") {myGamePiece.speedX = -1; }
-    if (dir == "right") {myGamePiece.speedX = 1; }
-}
-
-function clearmove() {
-    myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkKTlUQudz0bvp1GlWYhuDcFLFro2Px0r4Ug&usqp=CAU";
-    myGamePiece.speedX = 0; 
-    myGamePiece.speedY = 0; 
-}
-</script>
-<div style="text-align:center;width:480px;">
-  <button onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')">UP</button><br><br>
-  <button onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')">LEFT</button>
-  <button onmousedown="move('right')" onmouseup="clearmove()" ontouchstart="move('right')">RIGHT</button><br><br>
-  <button onmousedown="move('down')" onmouseup="clearmove()" ontouchstart="move('down')">DOWN</button>
-</div>
+<h1>This is a video, about how to do art therapy!! Enjoy!!</h1>
 
 </body>
 </html>
+
