@@ -14,7 +14,7 @@
 img {
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto\9;
 }
 
 .box-left {
@@ -39,6 +39,7 @@ img {
 	text-align: center;
 	font-family: copperplate;
 	font-weight: 700;
+}
 	
 	body {
 		background-color: rgb(238, 211, 238);
